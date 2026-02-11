@@ -5,17 +5,25 @@ public with sharing class ListPractise1 {
     
     public void listMethod(){
         List<String> strList = new List<String>();
+        set<String> strSet = new Set<String>();
+        List<String> strList2 = new list<String>();
         strList.add('India');
 
         strList.add('USA');
 
         strList.add(1, 'UK');
         
-        List<String> strList2 = new list<String>();
-        
         strList2.add('Austrailia');
 
 		strList2.addAll(strList);        
+        
+        strSet.add('Japan');
+
+        SYstem.debug(strSet);
+
+        strList2.addAll(strSet);
+        
+        strList2.sort();
         
         System.debug('strList2 => ' + strList2);
     }
